@@ -107,7 +107,7 @@ public class HttpClientUtils {
                 post.setEntity(entity);
             }
             // 设置参数
-            RequestConfig.Builder customReqConf = RequestConfig.custom();
+            Builder customReqConf = RequestConfig.custom();
             if (connTimeout != null) {
                 customReqConf.setConnectTimeout(connTimeout);
             }
